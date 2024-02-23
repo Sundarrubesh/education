@@ -644,12 +644,24 @@ p
     background-color: white;
     border-radius: 3px;
   }
+  .hii
+{
+    min-height: 86vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(jobi.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
   .login-box {
+    margin-top: 50%;
     width: 360px;
     height: 280px;
     margin: auto;
     border-radius: 3px;
-    background-color: white;
+    align-items: center;
+
   }
   h1 {
     text-align: center;
@@ -676,7 +688,7 @@ p
     outline: none;
   }
   input[type="submit"] {
-    width: 320px;
+    width: 300px;
     height: 35px;
     margin-top: 20px;
     border: none;
