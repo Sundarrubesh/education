@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h1 class="logo">Next<span>Way</span></h1>
+            <ul>
+              
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/courses">COURSES</a></li>
+                <li><a href="/blog">SERVICE</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+            <button><a href="/signup">Register</a></button>
+        </nav>
+
+        <div class="text">
+            <h1>Find Your Next<span>way</span></h1>
+            <p>Choose Your Future by Click Here</p>
+            <a href="/login" class="visit">SIGN IN</a>
+        </div>
+
+    </section>
+</body>
+</html>

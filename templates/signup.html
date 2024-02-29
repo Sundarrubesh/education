@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <h1 class="logo">Next<span>Way</span></h1>
+              
+                  <ul>
+                      <li><a href="/">HOME</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/courses">COURSES</a></li>
+                      <li><a href="/blog">SERVICE</a></li>
+                      <li><a href="/contact">CONTACT</a></li>
+                  </ul>
+                  <button><a href="/signup">REGISTER</a></button>
+        </nav>
+
+        <!----sign in-->
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form action="/signup" method="POST">
+          <label>Name</label>
+          <input type="text" placeholder="" name="name" />
+          <label>Email</label>
+          <input type="email" placeholder="" name="email"/>
+          <label>Password</label>
+          <input type="password" placeholder="" name="password"/>
+          <input type="submit" value="Submit" />
+        </form>
+        
+        <p class="hello">Already have an account? <a href="/login">Login</a></p>
+
+        <p>
+          By clicking the Sign Up button,you agree to our <br />
+          <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+        </p>
+
+      </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <h1 class="logo">Next<span>Way</span></h1>
+              
+                  <ul>
+                      <li><a href="/">HOME</a></li>
+                      <li><a href="/about">ABOUT</a></li>
+                      <li><a href="/courses">COURSES</a></li>
+                      <li><a href="/blog">SERVICE</a></li>
+                      <li><a href="contact">CONTACT</a></li>
+                  </ul>
+                  <button><a href="/signup">REGISTER</a></button>
+        </nav>
+    </section>
+<div class="hii">
+    <div class="login-box"><br>
+      <br>
+      <br><br><br>
+      <br>
+      
+        <h1>Login</h1>
+       
+        <form action="/login" method="POST">
+          <label>Email</label>
+          <input type="email" placeholder="" name="email"/>
+          <label>Password</label>
+          <input type="password" placeholder="" name="password"/>
+          <br>
+          <br>
+          <input type="submit" value="Submit" />
+
+        </form>
+
+        <div style="height: 50px;">
+  
+          {% with messages =get_flashed_messages(with_categories=true)%}
+          {% if messages %}
+          {% for category ,message in messages %}
+          <div class="alert alert-{{category}}">{{message}}</div>
+          {%endfor %}
+          {% endif %}
+          {% endwith %}
+      </div>
+        <p>Don't have an Account? <a href="signup">REGISTER</a></p>
+      </div>
+      </div>
+      
+</body>
+</html>
