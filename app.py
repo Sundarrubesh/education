@@ -2,7 +2,6 @@ from flask import Flask  , render_template,request,redirect,session,flash
 import secrets
 import sqlite3
 
-
 app=Flask(__name__)
 app.secret_key="123"
 
@@ -63,6 +62,10 @@ def signin():
 @app.route('/about')
 def about():
     return render_template("about.html")
+
+@app.route('/chat')
+def chat():
+    return render_template("chat.html")
 
 @app.route('/blog')
 def blog():
